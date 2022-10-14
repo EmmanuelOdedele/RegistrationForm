@@ -138,6 +138,13 @@ form .button input:hover {
 }
 
 @media (max-width: 584px) {
+  .main-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .container {
     max-width: 100%;
   }
@@ -150,12 +157,12 @@ form .button input:hover {
     width: 100%;
   }
 
-  .container form .user-details{
+  .container form .user-details {
     max-height: 300x;
     overflow-y: scroll;
   }
 
-  .user-details::-webkit-scrollbar{
+  .user-details::-webkit-scrollbar {
     width: 0;
   }
 }
