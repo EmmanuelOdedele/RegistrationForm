@@ -13,13 +13,18 @@
       <div class="container">
         <div class="title">Registration</div>
         <p class="requiredhead">*Required</p>
-        <form action="#">
+        <form action="#" onsubmit="myValidation()">
           <div class="user-details">
             <div class="input-box">
               <span class="details"
                 >Full name <span class="required">*</span></span
               >
-              <input id="fullname" type="text" placeholder="Enter your name" />
+              <input
+                oninput="changeFullName()"
+                id="fullname"
+                type="text"
+                placeholder="Enter your name"
+              />
               <div class="validation" id="fullnameval"></div>
             </div>
             <div class="input-box">
@@ -27,6 +32,7 @@
                 >Username <span class="required">*</span></span
               >
               <input
+                oninput="changeUserName()"
                 id="username"
                 type="text"
                 placeholder="Enter your username"
@@ -35,7 +41,12 @@
             </div>
             <div class="input-box">
               <span class="details">Email <span class="required">*</span></span>
-              <input id="email" type="email" placeholder="Enter your email" />
+              <input
+                oninput="changeEmail()"
+                id="email"
+                type="email"
+                placeholder="Enter your email"
+              />
               <div class="validation" id="emailval"></div>
             </div>
             <div class="input-box">
@@ -43,8 +54,9 @@
                 >Phone Number <span class="required">*</span></span
               >
               <input
+                oninput="changePhone()"
                 id="phone"
-                type="password"
+                type="tel"
                 placeholder="Enter your number"
               />
               <div class="validation" id="phoneval"></div>
@@ -54,6 +66,7 @@
                 >Password <span class="required">*</span></span
               >
               <input
+                oninput="changePassword1()"
                 type="password"
                 id="password1"
                 placeholder="Enter your password"
@@ -63,6 +76,7 @@
             <div class="input-box">
               <span class="details">Confirm Password</span>
               <input
+                oninput="changePassword2()"
                 type="password"
                 id="password2"
                 placeholder="Confirm your password"
@@ -91,7 +105,7 @@
             </div>
           </div>
           <div class="button">
-            <input type="submit" value="Register" onsubmit="myValidation()" />
+            <input type="submit" value="Register" />
           </div>
         </form>
       </div>
