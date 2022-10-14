@@ -15,7 +15,6 @@ body {
 
 .main-container {
   width: 100%;
-  padding: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,6 +142,7 @@ form .button input:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
   }
 
   .container {
@@ -158,37 +158,7 @@ form .button input:hover {
   }
 
   .container form .user-details {
-    max-height: 300x;
-    overflow-y: scroll;
-  }
-
-  .user-details::-webkit-scrollbar {
-    width: 0;
-  }
-}
-
-@media (min-width: 320px) and (max-width:480px) {
-  .main-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .container {
-    max-width: 100%;
-  }
-
-  form .user-details .input-box {
-    margin-bottom: 15px;
-    width: 100%;
-  }
-  form .gender-details .category {
-    width: 100%;
-  }
-
-  .container form .user-details {
-    max-height: 300x;
+    max-height: 300px;
     overflow-y: scroll;
   }
 
