@@ -18,6 +18,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px 50px;
 }
 
 .container {
@@ -137,6 +138,12 @@ form .button input:hover {
 }
 
 @media (max-width: 584px) {
+
+  body {
+    display: flex;
+    height: 100%;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  }
   .main-container {
     width: 100%;
     display: flex;
@@ -164,5 +171,9 @@ form .button input:hover {
 
   .user-details::-webkit-scrollbar {
     width: 0;
+  }
+
+  .category {
+    flex-direction: column;
   }
 }
