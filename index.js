@@ -38,7 +38,7 @@ function myValidation() {
     document.getElementById("password2val").innerHTML =
       "Please confirm your password";
     return false;
-  }
+  } else
   if (password2 !== password1) {
     document.getElementById("password2val").innerHTML = "Password incorrect";
     return false;
