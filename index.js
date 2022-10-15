@@ -38,10 +38,11 @@ function myValidation() {
     document.getElementById("password2val").innerHTML =
       "Please confirm your password";
     return false;
-  } else
-  if (password2 !== password1) {
+  } else if (password2 !== password1) {
     document.getElementById("password2val").innerHTML = "Password incorrect";
     return false;
+  } else if (password2 == password1) {
+    return true;
   }
 }
 
@@ -89,5 +90,4 @@ function changePassword2() {
 
 function validatePhoneNumber() {
   let valPhone = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/;
-
 }
