@@ -1,4 +1,6 @@
-function myValidation() {
+function myValidation(e) {
+  e.preventDefault();
+  console.log(e);
   let fullname = document.getElementById("fullname").value;
   if (fullname == "") {
     document.getElementById("fullnameval").innerHTML =
